@@ -2,6 +2,23 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, TrendingUp, Zap, BarChart3 } from 'lucide-react';
 import Button from '../ui/Button';
+import { useEffect } from 'react';
+import { useMotionValue, useTransform, animate } from 'framer-motion';
+
+const Counter = ({ from = 0, to, duration = 2, prefix = "", suffix = "" }) => {
+    const count = useMotionValue(from);
+    const rounded = useTransform(count, (latest) => {
+        const isFloat = to % 1 !== 0;
+        return prefix + latest.toFixed(isFloat ? 1 : 0) + suffix;
+    });
+
+    useEffect(() => {
+        const controls = animate(count, to, { duration: duration, ease: "easeOut" });
+        return controls.stop;
+    }, [count, to, duration]);
+
+    return <motion.span>{rounded}</motion.span>;
+};
 
 const Hero = () => {
     return (
@@ -93,7 +110,9 @@ const Hero = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs text-gray-400">ROI Growth</p>
-                                    <p className="text-xl font-bold text-white">+245%</p>
+                                    <p className="text-xl font-bold text-white">
+                                        <Counter from={0} to={245} prefix="+" suffix="%" />
+                                    </p>
                                 </div>
                             </div>
                         </motion.div>
@@ -109,7 +128,9 @@ const Hero = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs text-gray-400">Conversion Rate</p>
-                                    <p className="text-xl font-bold text-white">8.5%</p>
+                                    <p className="text-xl font-bold text-white">
+                                        <Counter from={0} to={8.5} suffix="%" />
+                                    </p>
                                 </div>
                             </div>
                         </motion.div>

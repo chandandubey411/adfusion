@@ -35,7 +35,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-white font-bold mb-1">Email</h3>
-                                    <p className="text-gray-400 hover:text-white transition-colors">hello@adfusion.com</p>
+                                    <p className="text-gray-400 hover:text-white transition-colors">support@adfusion.co.in</p>
                                 </div>
                             </div>
 
@@ -52,32 +52,35 @@ const Contact = () => {
                     </div>
 
                     <motion.form
+                        action="https://api.web3forms.com/submit"
+                        method="POST"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className="glass-card p-8 md:p-10 rounded-3xl space-y-6"
                     >
+                        <input type="hidden" name="access_key" value="91272ddf-93ae-4969-8290-1f599564ccf2" />
                         <h3 className="text-2xl font-bold mb-2">Send a Message</h3>
 
                         <div className="grid grid-cols-2 gap-6">
                             <div className="space-y-2">
                                 <label className="text-sm text-gray-400">Name</label>
-                                <input type="text" className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" placeholder="John Doe" />
+                                <input type="text" name="name" className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" placeholder="John Doe" required />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-sm text-gray-400">Phone</label>
-                                <input type="tel" className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" placeholder="+91..." />
+                                <input type="tel" name="phone" className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" placeholder="+91..." />
                             </div>
                         </div>
 
                         <div className="space-y-2">
                             <label className="text-sm text-gray-400">Email</label>
-                            <input type="email" className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" placeholder="john@example.com" />
+                            <input type="email" name="email" className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" placeholder="john@example.com" required />
                         </div>
 
                         <div className="space-y-2">
                             <label className="text-sm text-gray-400">Service Interested In</label>
-                            <select className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors">
+                            <select name="service" className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors">
                                 <option>Digital Marketing</option>
                                 <option>Web Development</option>
                                 <option>Branding</option>
@@ -88,7 +91,7 @@ const Contact = () => {
 
                         <div className="space-y-2">
                             <label className="text-sm text-gray-400">Message</label>
-                            <textarea rows="4" className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" placeholder="Tell us about your project..." />
+                            <textarea name="message" rows="4" className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors" placeholder="Tell us about your project..." required />
                         </div>
 
                         <Button className="w-full py-4 text-lg">Send Message <Send size={18} /></Button>

@@ -4,26 +4,26 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
     {
-        name: 'Sarah Johnson',
-        role: 'CEO, TechStart',
+        name: 'Mr. Chandan Dubey',
+        role: 'Director, Avdesh Glass House',
         content: 'AdFusion transformed our online presence. Our leads increased by 200% in just 3 months!',
         stars: 5,
     },
     {
-        name: 'Michael Chen',
-        role: 'Founder, EcoLife',
+        name: 'Amit Patel',
+        role: 'Founder, TechSolutions',
         content: 'The team is incredibly creative and data-driven. Best agency experience we have had.',
         stars: 5,
     },
     {
-        name: 'Emma Williams',
-        role: 'Marketing Dir, StyleCo',
+        name: 'Priya Sharma',
+        role: 'Marketing Head, StyleHub',
         content: 'Professional, timely, and results-oriented. The new website design is stunning.',
         stars: 5,
     },
     {
-        name: 'David Miller',
-        role: 'Owner, Miller Realty',
+        name: 'Rahul Verma',
+        role: 'Owner, Verma Realty',
         content: 'Their local SEO strategy put us on the map. Highly recommend for any growing business.',
         stars: 5,
     },
@@ -45,13 +45,13 @@ const Testimonials = () => {
                     {[...testimonials, ...testimonials].map((t, i) => (
                         <div
                             key={i}
-                            className="inline-block w-[350px] md:w-[450px] p-8 rounded-2xl bg-dark-800 border border-white/5 relative whitespace-normal"
+                            className="inline-block w-[500px] md:w-[800px] p-6 rounded-2xl bg-dark-800 border border-white/5 relative whitespace-normal"
                         >
                             <Quote className="text-gold-500/20 absolute top-6 right-6" size={40} />
-                            <div className="flex gap-1 text-gold-500 mb-4">
+                            <div className="flex gap-1 text-gold-500 mb-3">
                                 {[...Array(t.stars)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
                             </div>
-                            <p className="text-gray-300 mb-6 italic">"{t.content}"</p>
+                            <p className="text-gray-300 mb-4 italic">"{t.content}"</p>
                             <div>
                                 <p className="font-bold text-white">{t.name}</p>
                                 <p className="text-sm text-gray-500">{t.role}</p>
