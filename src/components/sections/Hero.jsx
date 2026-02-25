@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, TrendingUp, Zap, BarChart3 } from 'lucide-react';
+import { ArrowRight, TrendingUp, Zap, BarChart3, Instagram, MapPin } from 'lucide-react';
 import Button from '../ui/Button';
 import { useEffect } from 'react';
 import { useMotionValue, useTransform, animate } from 'framer-motion';
@@ -99,17 +99,37 @@ const Hero = () => {
                 >
                     {/* Floating Cards simulating 3D */}
                     <div className="relative w-full h-[500px]">
+                        {/* Instagram Page Growth - Top Left */}
+                        <motion.div
+                            animate={{ y: [0, -15, 0] }}
+                            transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
+                            className="absolute top-0 left-0 z-20"
+                        >
+                            <div className="glass-card p-4 rounded-2xl flex items-center gap-4 w-52 shadow-2xl shadow-pink-500/10">
+                                <div className="bg-gradient-to-br from-pink-500/20 to-purple-500/20 p-2 rounded-lg text-pink-500">
+                                    <Instagram size={24} />
+                                </div>
+                                <div>
+                                    <p className="text-[10px] text-gray-400 uppercase tracking-wider">IG Page Growth</p>
+                                    <p className="text-xl font-bold text-white">
+                                        <Counter from={0} to={200} prefix="+" suffix="%" />
+                                    </p>
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        {/* ROI Growth - Top Right */}
                         <motion.div
                             animate={{ y: [-10, 10, -10] }}
                             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                            className="absolute top-10 right-10 z-20"
+                            className="absolute top-10 right-0 z-20"
                         >
                             <div className="glass-card p-4 rounded-2xl flex items-center gap-4 w-48 shadow-2xl shadow-gold-500/10">
                                 <div className="bg-green-500/20 p-2 rounded-lg text-green-400">
                                     <TrendingUp size={24} />
                                 </div>
                                 <div>
-                                    <p className="text-xs text-gray-400">ROI Growth</p>
+                                    <p className="text-[10px] text-gray-400 uppercase tracking-wider">ROI Growth</p>
                                     <p className="text-xl font-bold text-white">
                                         <Counter from={0} to={245} prefix="+" suffix="%" />
                                     </p>
@@ -117,19 +137,39 @@ const Hero = () => {
                             </div>
                         </motion.div>
 
+                        {/* Conversion Rate - Bottom Left */}
                         <motion.div
                             animate={{ y: [15, -15, 15] }}
                             transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                            className="absolute bottom-20 left-10 z-30"
+                            className="absolute bottom-20 left-0 z-30"
                         >
                             <div className="glass-card p-4 rounded-2xl flex items-center gap-4 w-52 shadow-2xl shadow-purple-500/10">
                                 <div className="bg-purple-500/20 p-2 rounded-lg text-purple-400">
                                     <Zap size={24} />
                                 </div>
                                 <div>
-                                    <p className="text-xs text-gray-400">Conversion Rate</p>
+                                    <p className="text-[10px] text-gray-400 uppercase tracking-wider">Conversion Rate</p>
                                     <p className="text-xl font-bold text-white">
                                         <Counter from={0} to={8.5} suffix="%" />
+                                    </p>
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        {/* Local Search Growth - Bottom Right */}
+                        <motion.div
+                            animate={{ y: [-5, 15, -5] }}
+                            transition={{ duration: 5.5, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+                            className="absolute bottom-10 right-0 z-30"
+                        >
+                            <div className="glass-card p-4 rounded-2xl flex items-center gap-4 w-52 shadow-2xl shadow-gold-500/10">
+                                <div className="bg-gold-500/20 p-2 rounded-lg text-gold-500">
+                                    <MapPin size={24} />
+                                </div>
+                                <div>
+                                    <p className="text-[10px] text-gray-400 uppercase tracking-wider">Local Search</p>
+                                    <p className="text-xl font-bold text-white">
+                                        <Counter from={0} to={100} prefix="+" suffix="%" />
                                     </p>
                                 </div>
                             </div>

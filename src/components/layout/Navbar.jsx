@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Button from '../ui/Button';
 
 const Navbar = () => {
@@ -16,10 +17,10 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Services', href: '#services' },
-        { name: 'Portfolio', href: '#portfolio' },
-        { name: 'About', href: '#about' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Services', href: '/#services' },
+        { name: 'Portfolio', href: '/#portfolio' },
+        { name: 'About', href: '/#about' },
+        { name: 'Contact', href: '/#contact' },
     ];
 
     return (
@@ -31,9 +32,9 @@ const Navbar = () => {
                 }`}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
-                <a href="#" className="text-2xl font-bold font-sans tracking-tight">
+                <Link to="/" className="text-2xl font-bold font-sans tracking-tight">
                     Ad<span className="text-gold-500">Fusion</span>
-                </a>
+                </Link>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center gap-8">
@@ -46,7 +47,13 @@ const Navbar = () => {
                             {link.name}
                         </a>
                     ))}
-                    <Button variant="primary" className="px-5 py-2 text-sm" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                    <Button variant="primary" className="px-5 py-2 text-sm" onClick={() => {
+                        if (window.location.pathname === '/') {
+                            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                        } else {
+                            window.location.href = '/#contact';
+                        }
+                    }}>
                         Get Started
                     </Button>
                 </div>
@@ -80,7 +87,16 @@ const Navbar = () => {
                                     {link.name}
                                 </a>
                             ))}
-                            <Button onClick={() => { setIsMobileMenuOpen(false); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}>Get Started</Button>
+                            <Button onClick={() => {
+                                setIsMobileMenuOpen(false);
+                                if (window.location.pathname === '/') {
+                                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                                } else {
+                                    window.location.href = '/#contact';
+                                }
+                            }}>
+                                Get Started
+                            </Button>
                         </div>
                     </motion.div>
                 )}

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import Button from '../ui/Button';
 
-const Contact = () => {
+const Contact = ({ defaultService = "Digital Marketing" }) => {
     return (
         <section id="contact" className="py-24 relative">
             <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-black pointer-events-none" />
@@ -25,7 +25,11 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-white font-bold mb-1">Phone</h3>
-                                    <p className="text-gray-400 hover:text-white transition-colors">7295043391</p>
+                                    <div className="space-y-1">
+                                        <p className="text-gray-400 hover:text-white transition-colors">9599799883</p>
+                                        <p className="text-gray-400 hover:text-white transition-colors">9599799778</p>
+                                        <p className="text-gray-400 hover:text-white transition-colors">7295043391</p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -80,12 +84,16 @@ const Contact = () => {
 
                         <div className="space-y-2">
                             <label className="text-sm text-gray-400">Service Interested In</label>
-                            <select name="service" className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors">
-                                <option>Digital Marketing</option>
-                                <option>Web Development</option>
-                                <option>Branding</option>
-                                <option>Video Production</option>
-                                <option>Other</option>
+                            <select
+                                name="service"
+                                defaultValue={defaultService}
+                                className="w-full bg-dark-900/50 border border-white/10 rounded-lg p-3 text-white focus:border-gold-500 focus:outline-none transition-colors"
+                            >
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Branding">Branding</option>
+                                <option value="Video Production">Video Production</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
 
