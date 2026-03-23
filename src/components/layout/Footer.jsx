@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
 
 const Footer = () => {
@@ -11,7 +12,11 @@ const Footer = () => {
                         <a href="#" className="text-2xl font-bold font-sans tracking-tight block mb-2">
                             Ad<span className="text-gold-500">Fusion</span>
                         </a>
-                        <p className="text-gray-500 text-sm">© {new Date().getFullYear()} AdFusion Agency. All rights reserved.</p>
+                        <p className="text-gray-500 text-sm mb-4">© {new Date().getFullYear()} AdFusion Agency. All rights reserved.</p>
+                        <Link to="/terms-and-conditions" className="text-gray-400 text-sm hover:text-gold-500 transition-colors relative group">
+                            Terms & Conditions
+                            <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold-500 group-hover:w-full transition-all duration-300"></span>
+                        </Link>
                     </div>
 
                     <div className="flex items-center gap-6">

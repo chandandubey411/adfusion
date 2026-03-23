@@ -70,7 +70,7 @@ const GenericService = () => {
                         <h2 className="text-4xl md:text-5xl font-bold mb-8">Let's build your <span className="text-gold-500">Success Story.</span></h2>
                         <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">Contact us today for a personalized strategy tailored to your brand's unique needs.</p>
                         <a
-                            href="https://wa.me/919599799883"
+                            href="https://wa.me/917303405072"
                             className="inline-flex px-12 py-5 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-black rounded-full hover:scale-105 transition-transform shadow-xl uppercase tracking-widest"
                         >
                             Get Free Consultation

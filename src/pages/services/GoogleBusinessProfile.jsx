@@ -193,7 +193,7 @@ const GoogleBusinessProfile = () => {
                         <h2 className="text-4xl md:text-6xl font-black mb-8">Ready to dominate <span className="text-gold-500">Local Search?</span></h2>
                         <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">Get your free Google Business Profile audit and start your journey to the top of Google Maps.</p>
                         <a
-                            href="https://wa.me/919599799883"
+                            href="https://wa.me/917303405072"
                             className="inline-flex px-12 py-5 bg-gold-500 text-black font-black rounded-full hover:scale-105 transition-transform shadow-[0_10px_40px_rgba(212,175,55,0.3)] text-xl"
                         >
                             Get Free Consultation

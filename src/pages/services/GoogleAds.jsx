@@ -148,7 +148,7 @@ const GoogleAds = () => {
                             className="flex flex-wrap justify-center gap-6"
                         >
                             <a
-                                href="https://wa.me/919599799883"
+                                href="https://wa.me/917303405072"
                                 className="px-12 py-5 bg-gold-500 text-black font-black rounded-full hover:scale-105 transition-transform shadow-[0_15px_45px_rgba(212,175,55,0.3)] text-lg uppercase tracking-widest"
                             >
                                 Get Free Consultation

@@ -14,6 +14,7 @@ import VideoShoot from './pages/services/VideoShoot';
 import PRAgencyProgram from './pages/services/PRAgencyProgram';
 import InfluencerMarketing from './pages/services/InfluencerMarketing';
 import GenericService from './pages/services/GenericService';
+import Terms from './pages/Terms';
 import ScrollToTop from './components/common/ScrollToTop';
 import { ArrowUp } from 'lucide-react';
 
@@ -77,6 +78,13 @@ function App() {
           <Route path="/services/pr-agency-program" element={<PRAgencyProgram />} />
           <Route path="/services/influencer-marketing" element={<InfluencerMarketing />} />
           <Route path="/services/:slug" element={<GenericService />} />
+          <Route path="/terms-and-conditions" element={
+            <>
+              <Navbar />
+              <Terms />
+              <Footer />
+            </>
+          } />
         </Routes>
       </div>
     </Router>

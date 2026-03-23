@@ -102,7 +102,7 @@ const InstagramMarketing = () => {
                             transition={{ delay: 0.3 }}
                         >
                             <a
-                                href="https://wa.me/919599799883"
+                                href="https://wa.me/917303405072"
                                 className="inline-flex items-center gap-2 px-10 py-5 bg-gold-500 text-black font-black rounded-full hover:scale-105 transition-transform shadow-[0_10px_30px_rgba(212,175,55,0.3)] text-lg uppercase tracking-wider"
                             >
                                 👉 Get Free Consultation
