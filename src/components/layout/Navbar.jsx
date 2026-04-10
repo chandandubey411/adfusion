@@ -67,16 +67,15 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile Menu Overlay */}
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div
                         initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: '100vh' }}
+                        animate={{ opacity: 1, height: 'calc(100vh - 100%)' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden absolute top-full left-0 right-0 bg-dark-900/95 backdrop-blur-lg border-t border-white/10 overflow-hidden"
+                        className="md:hidden absolute top-full left-0 right-0 bg-dark-900/95 backdrop-blur-lg border-t border-white/10 overflow-y-auto"
                     >
-                        <div className="flex flex-col items-center justify-center h-full gap-8 pb-20">
+                        <div className="flex flex-col items-center pt-12 pb-24 gap-8 min-h-full">
                             {navLinks.map((link) => (
                                 <a
                                     key={link.name}

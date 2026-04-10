@@ -44,12 +44,18 @@ const Contact = ({ defaultService = "Digital Marketing" }) => {
                             </div>
 
                             <div className="flex items-start gap-4">
-                                <div className="bg-dark-800 p-3 rounded-lg text-gold-500">
+                                <div className="bg-dark-800 p-3 rounded-lg text-gold-500 mt-1">
                                     <MapPin size={24} />
                                 </div>
-                                <div>
-                                    <h3 className="text-white font-bold mb-1">Office</h3>
-                                    <p className="text-gray-400">Shop No. 12-14, 1st Floor, Niti Khand-3, Indirapuram</p>
+                                <div className="space-y-4">
+                                    <div>
+                                        <h3 className="text-white font-bold mb-1">Delhi NCR Office</h3>
+                                        <p className="text-gray-400 leading-relaxed max-w-xs">Office no -205, 2nd floor, Shakti Khand 2, Indirapuram, Ghaziabad 201014</p>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-white font-bold mb-1">Mumbai Office</h3>
+                                        <p className="text-gray-400 leading-relaxed max-w-xs">2nd Floor, Plot no. 9, Road No. 7, Marol MIDC Industry Estate, Andheri East, Mumbai, Maharashtra 400093</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
