@@ -25,11 +25,7 @@ const Contact = ({ defaultService = "Digital Marketing" }) => {
                                 </div>
                                 <div>
                                     <h3 className="text-white font-bold mb-1">Phone</h3>
-                                    <div className="space-y-1">
-                                        <p className="text-gray-400 hover:text-white transition-colors">9599799883</p>
-                                        <p className="text-gray-400 hover:text-white transition-colors">7303405072</p>
-                                        <p className="text-gray-400 hover:text-white transition-colors">7295043391</p>
-                                    </div>
+                                    <p className="text-gray-400 hover:text-white transition-colors">+91 88827 22731</p>
                                 </div>
                             </div>
 

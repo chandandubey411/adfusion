@@ -19,7 +19,7 @@ const StickyCTA = () => {
     }, []);
 
     const handleWhatsAppClick = () => {
-        window.open("https://wa.me/919599799883?text=Hello%20ADFUSION,%20I'm%20interested%20in%20your%20services!", "_blank");
+        window.open("https://wa.me/918882722731?text=Hello%20ADFUSION,%20I'm%20interested%20in%20your%20services!", "_blank");
     };
 
     return (
@@ -47,7 +47,7 @@ const StickyCTA = () => {
                                 </button>
 
                                 <a
-                                    href="https://wa.me/919599799883"
+                                    href="https://wa.me/918882722731"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="p-3 bg-[#25D366] text-white rounded-full hover:scale-110 transition-transform shadow-lg shadow-[#25D366]/20 md:hidden"

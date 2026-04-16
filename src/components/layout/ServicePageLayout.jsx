@@ -36,7 +36,7 @@ const ServicePageLayout = ({ children }) => {
 
             {/* Floating WhatsApp Button (Standard) */}
             <a
-                href="https://wa.me/919599799883"
+                href="https://wa.me/918882722731"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed bottom-8 left-8 z-50 p-4 rounded-full bg-[#25D366] text-white shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform flex items-center justify-center group"
