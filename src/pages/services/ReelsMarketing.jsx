@@ -145,13 +145,13 @@ const ReelsMarketing = () => {
                             className="flex flex-wrap justify-center gap-6"
                         >
                             <a
-                                href="https://wa.me/917303405072"
+                                href="https://wa.me/919599799778"
                                 className="px-12 py-5 bg-gold-500 text-black font-black rounded-full hover:scale-105 transition-transform shadow-[0_15px_45px_rgba(212,175,55,0.3)] text-lg uppercase tracking-widest"
                             >
                                 Get Free Consultation
                             </a>
                             <a
-                                href="https://wa.me/919599799883"
+                                href="https://wa.me/919599799778"
                                 className="px-12 py-5 border border-gold-500/30 text-gold-500 font-black rounded-full hover:bg-gold-500/5 hover:border-gold-500 transition-all text-lg uppercase tracking-widest"
                             >
                                 Talk to Expert
@@ -352,7 +352,7 @@ const ReelsMarketing = () => {
                             <h2 className="text-5xl md:text-9xl font-black mb-12 leading-none uppercase tracking-tight">Ready to Grow with <br /> <span className="underline decoration-black decoration-[16px] underline-offset-[24px]">High-Impact Reels?</span></h2>
                             <p className="text-xl md:text-3xl font-black mb-16 max-w-4xl mx-auto opacity-80 uppercase tracking-[0.3em] leading-relaxed">Let’s create scroll-stopping content that turns viewers into customers.</p>
                             <a
-                                href="https://wa.me/919599799883"
+                                href="https://wa.me/919599799778"
                                 className="inline-flex items-center gap-8 px-16 py-8 bg-black text-white font-black rounded-full hover:scale-105 transition-transform shadow-3xl text-2xl uppercase tracking-[0.1em] group"
                             >
                                 Get Free Strategy Consultation

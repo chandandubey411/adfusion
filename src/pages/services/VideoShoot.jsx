@@ -147,13 +147,13 @@ const VideoShoot = () => {
                             className="flex flex-wrap justify-center gap-6"
                         >
                             <a
-                                href="https://wa.me/917303405072"
+                                href="https://wa.me/919599799778"
                                 className="px-12 py-5 bg-gold-500 text-black font-black rounded-full hover:scale-105 transition-transform shadow-[0_15px_45px_rgba(212,175,55,0.4)] text-lg uppercase tracking-widest"
                             >
                                 Get Free Consultation
                             </a>
                             <a
-                                href="https://wa.me/919599799883"
+                                href="https://wa.me/919599799778"
                                 className="px-12 py-5 border border-gold-500/40 text-gold-400 font-black rounded-full hover:bg-gold-500/10 hover:border-gold-500 transition-all text-lg uppercase tracking-widest"
                             >
                                 Book a Shoot
@@ -351,7 +351,7 @@ const VideoShoot = () => {
                             <h2 className="text-5xl md:text-9xl font-black mb-12 leading-none uppercase tracking-tighter">Ready to Elevate <br /> Your Brand with <span className="underline decoration-black decoration-[18px] underline-offset-[28px]">Videos?</span></h2>
                             <p className="text-xl md:text-3xl font-black mb-20 max-w-4xl mx-auto opacity-90 uppercase tracking-[0.4em] leading-relaxed">Let’s create powerful visual content that captures attention and drives growth.</p>
                             <a
-                                href="https://wa.me/919599799883"
+                                href="https://wa.me/919599799778"
                                 className="inline-flex items-center gap-8 px-16 py-8 bg-black text-white font-black rounded-full hover:scale-105 transition-transform shadow-3xl text-2xl uppercase tracking-[0.1em] group"
                             >
                                 Book Your Video Shoot Today

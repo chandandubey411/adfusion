@@ -147,13 +147,13 @@ const MetaMarketing = () => {
                             className="mt-12 flex flex-wrap justify-center gap-6"
                         >
                             <a
-                                href="https://wa.me/917303405072"
+                                href="https://wa.me/919599799778"
                                 className="px-10 py-5 bg-gold-500 text-black font-black rounded-full hover:scale-105 transition-transform shadow-[0_10px_30px_rgba(212,175,55,0.3)] text-lg uppercase tracking-wide"
                             >
                                 Get Free Consultation
                             </a>
                             <a
-                                href="https://wa.me/919599799883"
+                                href="https://wa.me/919599799778"
                                 className="px-10 py-5 border border-gold-500/30 text-gold-500 font-black rounded-full hover:bg-gold-500/5 hover:border-gold-500 transition-all text-lg uppercase tracking-wide"
                             >
                                 Talk to Expert
@@ -351,7 +351,7 @@ const MetaMarketing = () => {
                             <h2 className="text-5xl md:text-8xl font-black mb-8 leading-none uppercase">Ready to Scale Your <br /> Business with <span className="underline decoration-black decoration-8 underline-offset-8">Meta Ads?</span></h2>
                             <p className="text-xl md:text-2xl font-bold mb-14 max-w-3xl mx-auto opacity-80 uppercase tracking-wide">Let’s create high-performing campaigns that turn clicks into customers.</p>
                             <a
-                                href="https://wa.me/919599799883"
+                                href="https://wa.me/919599799778"
                                 className="inline-flex items-center gap-4 px-14 py-6 bg-black text-white font-black rounded-full hover:scale-105 transition-transform shadow-2xl text-xl uppercase tracking-widest group"
                             >
                                 Get Free Strategy Consultation

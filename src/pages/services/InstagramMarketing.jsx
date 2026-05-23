@@ -102,7 +102,7 @@ const InstagramMarketing = () => {
                             transition={{ delay: 0.3 }}
                         >
                             <a
-                                href="https://wa.me/917303405072"
+                                href="https://wa.me/919599799778"
                                 className="inline-flex items-center gap-2 px-10 py-5 bg-gold-500 text-black font-black rounded-full hover:scale-105 transition-transform shadow-[0_10px_30px_rgba(212,175,55,0.3)] text-lg uppercase tracking-wider"
                             >
                                 👉 Get Free Consultation
@@ -198,7 +198,7 @@ const InstagramMarketing = () => {
                     <div className="bg-gradient-to-r from-gold-500/10 via-gold-500/20 to-gold-500/10 p-12 md:p-20 rounded-[3rem] border border-gold-500/20 text-center relative overflow-hidden group">
                         <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight">Ready to Scale Your Brand <br /> on <span className="text-gold-500 uppercase">Instagram?</span></h2>
                         <a
-                            href="https://wa.me/919599799883"
+                            href="https://wa.me/919599799778"
                             className="inline-flex px-12 py-5 bg-gold-500 text-black font-black rounded-full hover:scale-105 transition-transform shadow-[0_10px_30px_rgba(212,175,55,0.2)] text-xl uppercase tracking-widest"
                         >
                             Start Growing Today
